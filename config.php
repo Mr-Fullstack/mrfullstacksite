@@ -1,5 +1,5 @@
 <?php
-define('INCLUDE_PATH','http://localhost/portifolio-oficial/');
+define('INCLUDE_PATH','https://www.mrfullstack.site/');
 define('CSS_PATH',INCLUDE_PATH.'assets/css/main.css');
 define('CSS_ANIMATE_PATH',INCLUDE_PATH.'assets/css/animate.css');
 define('CSS_AWESOME_PATH',INCLUDE_PATH.'assets/css/all.min.css');
