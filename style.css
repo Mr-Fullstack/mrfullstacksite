@@ -30,7 +30,7 @@ nav{
   transition: all .5s ease-in ;
   box-shadow: .2rem .1rem .2rem #436777;
   z-index: 9;
-  overflow: scroll;
+  
 }
 
 
@@ -266,4 +266,11 @@ li:hover:after{
     width:100% ;
     
    }
+}
+
+@media only screen and (max-width:720px) {
+  nav{
+    overflow: scroll;
+  }
+   
 }
