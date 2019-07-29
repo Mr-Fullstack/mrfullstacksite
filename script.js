@@ -8,7 +8,6 @@ var width = window.innerWidth;
 
 /* faltar pegar tamanho da tela  para ajustar o mobile direito */
 
-
 action.setAttribute('class','bars');
 
 btn.style.backgroundColor="#d67e7e";
@@ -30,9 +29,13 @@ function menuClick(){
     btn.style.backgroundColor="#7ed684";
   }else{
     aside.style.transform="translate(0px,0px)";
+    if(width>=730){ 
     btn.style.left= "27.3%";
     content.style.width="70%";
     content.style.left="27.3%";
+   }else{
+    btn.style.left= "70%";
+   }
     open=true;
     action.setAttribute('class','');
     action.setAttribute('class','cross');
@@ -40,28 +43,45 @@ function menuClick(){
   }
 
 }
-/* corrigindo menu about sempre primeiro */
 
+
+
+function dataAtualFormatada(){
+  var data = new Date(),
+      dia  = data.getDate().toString(),
+      diaF = (dia.length == 1) ? '0'+dia : dia,
+      mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+      mesF = (mes.length == 1) ? '0'+mes : mes,
+      anoF = data.getFullYear();
+  return diaF+"/"+mesF+"/"+anoF;
+}
+
+
+
+/* pegando url */
 var url  = window.location.href;
 var link = url.split("#");
-console.log(link);
-
+/* corrigindo menu about sempre primeiro */
 if ( link.length == 1 ) {
 
   window.location.href = url+'#about';
  
 }
 
+var menuSel='';
 
 
 for (menu of menus){
+  
 
-  menu.onclick=function(){
+  menu.onclick=function(menu){
     
     if ( width <= 720){
       menuClick();
     }
-    
+
   }
 
 }
+
+
