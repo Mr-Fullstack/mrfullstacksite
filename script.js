@@ -81,11 +81,11 @@ if ( link.length == 1 ) {
 }
 
 
-
+ 
   var goFS = document.getElementById("goFS");
   goFS.addEventListener("click", function() {
-      var videoElement = document.getElementById("videoElement");
-      videoElement.requestFullscreen();
+      var body = document.body;
+      body.requestFullscreen();
   }, false);
 
 
