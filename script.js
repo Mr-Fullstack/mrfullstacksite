@@ -80,8 +80,8 @@ if ( link.length == 1 ) {
  
 }
 
-
-document.body.requestFullscreen();
+var body = document.body;
+body.requestFullscreen();
 
 for (menu of menus){
 
