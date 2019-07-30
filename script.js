@@ -29,11 +29,15 @@ function menuClick(){
     btn.style.backgroundColor="#7ed684";
   }else{
     aside.style.transform="translate(0px,0px)";
-    if(width>=730){ 
+    if(width>=1281){ 
     btn.style.left= "27.3%";
     content.style.width="70%";
     content.style.left="27.3%";
-   }else{
+   }else if(width<=1280){
+    btn.style.left= "22.6%";
+    content.style.width="74%";
+    content.style.left="22.7%";
+   }if(width <720){
     btn.style.left= "70%";
    }
     open=true;
@@ -80,7 +84,6 @@ if ( link.length == 1 ) {
 
 
 for (menu of menus){
-  
 
   menu.onclick=function(menu){
     
