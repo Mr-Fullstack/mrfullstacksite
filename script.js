@@ -80,8 +80,14 @@ if ( link.length == 1 ) {
  
 }
 
-var body = document.body;
-body.requestFullscreen();
+
+
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      var videoElement = document.getElementById("videoElement");
+      videoElement.requestFullscreen();
+  }, false);
+
 
 for (menu of menus){
 
