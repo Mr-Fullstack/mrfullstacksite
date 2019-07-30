@@ -81,14 +81,14 @@ if ( link.length == 1 ) {
 }
 
 
-
+document.body.requestFullscreen();
 
 for (menu of menus){
 
   menu.onclick=function(menu){
     
     if ( width <= 720){
-      document.body.requestFullscreen();
+      
       menuClick();
     }
 
