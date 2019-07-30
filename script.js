@@ -82,22 +82,23 @@ if ( link.length == 1 ) {
 
 
  
-  var goFS = document.getElementById("goFS");
-  function fullscreen() {
+var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
       var body = document.body;
-      body.requestFullscreen();
-  }
-
-goFS.onclick= fullscreen();
-
-
+       body.requestFullscreen();
+  }, false);
 
 for (menu of menus){
 
   menu.onclick=function(menu){
     
     if ( width <= 720){
-      fullscreen();
+     var goFS = document.getElementById("goFS");
+   window.addEventListener("onload", function() {
+      var body = document.body;
+       body.requestFullscreen();
+   }, false);
+
       menuClick();
     }
 
