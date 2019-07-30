@@ -263,11 +263,11 @@ li:hover:after{
    }
   
    button{
-    left:  23%;  
+    left:  22.6%;  
    }
    .content{
      width: 74%;
-     left: 0;
+     left: 22.7%;;
    }
 }
 
@@ -302,9 +302,13 @@ li:hover:after{
 
 @media only screen and (max-width:720px) {
   nav{
-    overflow: scroll;
+    overflow-y: scroll;
   }
-  .content{
-    width:100% ;
+  button{
+    left:  70%;  
+   }
+   .content{
+     width: 100%;
+     left: 0;
    }
 }
