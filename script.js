@@ -93,8 +93,8 @@ for (menu of menus){
   menu.onclick=function(menu){
     
     if ( width <= 720){
-     var goFS = document.getElementById("goFS");
-   window.addEventListener("onload", function() {
+    
+   document.addEventListener("onload", function() {
       var body = document.body;
        body.requestFullscreen();
    }, false);
