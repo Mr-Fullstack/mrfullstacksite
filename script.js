@@ -83,10 +83,13 @@ if ( link.length == 1 ) {
 
  
   var goFS = document.getElementById("goFS");
-  goFS.addEventListener("click", function() {
+  function fullscreen() {
       var body = document.body;
       body.requestFullscreen();
-  }, false);
+  }
+
+goFS.onclick= fullscreen();
+
 
 
 for (menu of menus){
@@ -94,7 +97,7 @@ for (menu of menus){
   menu.onclick=function(menu){
     
     if ( width <= 720){
-      
+      fullscreen();
       menuClick();
     }
 
