@@ -44,6 +44,7 @@ function menuClick(){
 
 }
 
+var text= '';
 
 
 function dataAtualFormatada(){
@@ -53,8 +54,15 @@ function dataAtualFormatada(){
       mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
       mesF = (mes.length == 1) ? '0'+mes : mes,
       anoF = data.getFullYear();
-  return diaF+"/"+mesF+"/"+anoF;
+      return diaF+"/"+mesF+"/"+anoF;
 }
+
+var dt = document.createElement('span');
+var date = document.getElementById('date');
+dt.setAttribute('id','now');
+date.appendChild(dt);
+dt = document.getElementById('now');
+dt.innerText=dataAtualFormatada();
 
 
 
@@ -68,7 +76,7 @@ if ( link.length == 1 ) {
  
 }
 
-var menuSel='';
+
 
 
 for (menu of menus){
