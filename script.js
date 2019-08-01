@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var btn = document.getElementById('btn');
 var aside = document.getElementById('menu');
 var content = document.querySelector('.content');
@@ -97,10 +97,6 @@ for (menu of menus){
 
 }
 
-
-
-
-=======
 var btn = document.getElementById('btn');
 var aside = document.getElementById('menu');
 var content = document.querySelector('.content');
@@ -197,4 +193,4 @@ for (menu of menus){
 }
 
 
->>>>>>> 5d784d7c9e2356d726b1017fec976d27fcd94873
+
