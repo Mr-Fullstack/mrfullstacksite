@@ -82,7 +82,6 @@ if ( link.length == 1 ) {
 }
 
 
-document.body.requestFullscreen();
 
 for (menu of menus){
 
