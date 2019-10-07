@@ -36,7 +36,7 @@ function search(text){
                     }
                 }
               };
-              consulta.open("GET", "search.php?src="+text, true);
+              consulta.open("GET", "http://ajaxphp.loveslife.biz/search.php?src="+text, true);
               consulta.send();	  
            }else{
                     document.getElementById("txtDigited").innerHTML="por favor  digite algo";
