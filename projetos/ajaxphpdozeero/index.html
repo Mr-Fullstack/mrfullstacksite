@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
-$url =  "http:$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-?>
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -9,7 +7,7 @@ $url =  "http:$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     <span data-image=<?=  $url."imagens" ?> ></span>
     </head>
     <body>
-	<form id="form-search" action="" >
+	<form id="form-search" action="" enctype="multipart/form-data >
 		<input id ="strings"type="text"  name="txt" onkeyup=" search(this.value);" />	
 	</form>
 		
