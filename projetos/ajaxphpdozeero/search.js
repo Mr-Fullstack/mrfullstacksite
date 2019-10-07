@@ -37,6 +37,7 @@ function search(text){
                 }
               };
               consulta.open("GET", "http://ajaxphp.loveslife.biz/search.php?src="+text, true);
+	      consulta.setRequestHeader('Content-Type', 'application/x-www-form');
 	      consulta.setRequestHeader("Access-Control-Allow-Origin", "*");
               consulta.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With");	   
               consulta.send();	  
