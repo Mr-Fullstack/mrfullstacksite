@@ -36,7 +36,7 @@ function search(text){
                     }
                 }
               };
-              consulta.open("GET", "http://mrfull.heliohost.org/ajaxphp/search.php/?src="+text, true);  
+              consulta.open("GET", "https://mrfull.heliohost.org/ajaxphp/search.php/?src="+text, true);  
               consulta.send();	  
            }else{
                     document.getElementById("txtDigited").innerHTML="por favor  digite algo";
