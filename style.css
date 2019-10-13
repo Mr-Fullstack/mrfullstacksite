@@ -258,6 +258,53 @@ li:hover:after{
    margin: 20px;
    padding: 2rem;
  }
+
+ .idioma{
+  z-index: 9;
+  background-color: #efeff0;
+  border-radius: 10px;
+  right: 10px;
+  top:4.1rem;
+  align-items: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: fixed;
+  padding: 1rem;
+  box-shadow: 0rem .1rem .4rem .1rem #e4e4e4;
+  border: .5px solid #ccc;
+  opacity: .80;
+ }
+ .idioma-list  {
+  display: flex;
+  flex-direction: column;
+}
+ .idioma-list span {
+   z-index: 15;
+   display: flex;
+   align-items: center;
+   padding: .4rem;
+   cursor: pointer;
+   width: auto;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+ }
+
+ .idioma-list span:hover {
+  background-color: #969fa3;
+}
+ .idioma-list img{
+  border-radius: 5px;
+  width: 55px;
+  height: 34px;
+
+ }
+
+ .idioma-list span img:hover{
+  filter: contrast(2);
+ }
 @media only screen and (max-width: 1280px) {
   nav{
     width: 20%;

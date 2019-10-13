@@ -6,9 +6,65 @@ var action = document.getElementById('action');
 var menus = document.querySelectorAll('#menu>ul>li');
 var open = true;
 var width = window.innerWidth;
+var menu;
+var listMenu=document.querySelectorAll("#menu>ul>li>a");
+var listSectionMenu=document.querySelectorAll("div>span.title>h2");
+console.log(listSectionMenu);
+var language = {
+  "pt_br":{
+      "menu":[
+          "sobre",
+          "habilidades",
+          "projetos",
+          "contato"
+      ]
+  },
+  "en_us":{
+      "menu":[
+          "about",
+          "skill",
+          "projects",
+          "contact"
+      ]
+}   
+};
+
+
+function idiomaChange(idiomaSelect){
+ 
+     switch(idiomaSelect){
+
+       case "pt_br":
+          menu = language.pt_br.menu;
+          newIdioma(listMenu);
+       break;
+
+       case "en_us":
+        menu = language.en_us.menu;
+        newIdioma(listMenu);
+       break;
+
+       default:
+         menu = language.en_us.menu;
+         newIdioma(listMenu);
+     }
+
+     
+}
+function newIdioma(listMenu){
+
+  for(i=0; i<menu.length; i++){
+
+    listMenu[i].innerText= menu[i];
+    listSectionMenu[i].innerText = menu[i];
+  }
+ 
+}
+
 
 /* faltar pegar tamanho da tela  para ajustar o mobile direito */
 
+console.log(language);
 action.setAttribute('class','bars');
 
 btn.style.backgroundColor="#d67e7e";
@@ -48,6 +104,9 @@ function menuClick(){
   }
 
 }
+
+
+
 
 var text= '';
 
