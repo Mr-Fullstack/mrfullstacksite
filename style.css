@@ -212,7 +212,7 @@ li:hover:after{
   flex-direction: column;
   align-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  overflow-y: scroll;
 }
 .title{
   display: inline-block;
